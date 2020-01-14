@@ -1,0 +1,251 @@
+$pageBackground: #FDFCFC;
+$brandNameColor: #006573;
+$navButtonColor: #0D5BF2;
+$cardImageBg: #5CBEDC;
+$orderButtonColor: #158EB5;
+$footerBg: #161A1D;
+$footerTextColor: #999999;
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    background-color: $pageBackground;
+}
+
+.logo-position{
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    transition: all .25s ease;
+
+    &__logo{
+        width: 64px;
+        height: 64px;
+    }
+
+    &__brand-name{
+        margin-left: 5px;
+    }
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+
+    &__element{
+        color: #000;
+        text-decoration: none;
+        margin: 0 10px;
+
+        &--button{
+            width: 120px;
+            height: 40px;
+            font-family: 'Comfortaa', cursive;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: $navButtonColor;
+            border: none;
+            border-radius: 20px;
+
+            &:hover{
+                cursor: pointer;
+                background-color: rgba($navButtonColor, .8);
+            }
+        }
+    }
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        margin-top: 80px
+    }
+}
+
+.home{
+    background-image: url('images/bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 0;
+
+    &__center-elements{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-self: center;
+        flex-grow: 2;
+    }
+
+    &__mouse-icon{
+        width: 32px;
+        position: absolute;
+        left: 50%;
+        top: 92%;
+        transform: translate(-50%,-50%);
+        animation: mouse-animation 2s infinite;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.about, .proposal{
+    
+    &__cards{
+        flex-grow: 2;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+
+        &--max-width{
+            width: 100%;
+        }
+    }
+}
+
+.catering{
+    
+    &__description{
+        width: 80%;
+        margin-top: 100px;
+    }
+
+    &__order-button{
+        width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 25px;
+        background-color: $orderButtonColor;
+        color: $pageBackground;
+        font-size: 1.25em;
+        margin-top: 100px;
+
+        &:hover{
+            cursor: pointer;
+            background-color: rgba($orderButtonColor,.8);
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    background-color: $footerBg;
+    color: $footerTextColor;
+    padding: 5px;
+    font-size: .9em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__part{
+        width: 50%;
+        padding: 5px;
+
+        &__title{
+            color: $pageBackground;
+            font-size: 1.1em;
+        }
+    }
+
+    &__socials{
+        &__item{
+            width: 32px;
+            margin: 5px 10px;
+
+            &:first-of-type{
+                margin-left: 0;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    &__credits{
+        width: 100%;
+        border-top: 1px solid #444444;
+        padding: 5px;
+
+        & > a{
+            color: $footerTextColor;
+        }
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 30px;
+
+    &__image{
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+        padding: 10px;
+        background-color: $cardImageBg;
+    }
+
+    &__product-image{
+        width: 128px;
+    }
+
+    &__title--bold{
+        font-weight: 700;
+    }
+}
+
+.cupcakes-image{
+    width: 700px;
+}
+
+.fixed{
+    position: fixed;
+    background-color: $pageBackground;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    z-index: 2;
+}
+
+@keyframes mouse-animation{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(5px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
