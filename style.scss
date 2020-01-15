@@ -5,7 +5,23 @@ $cardImageBg: #5CBEDC;
 $orderButtonColor: #158EB5;
 $footerBg: #161A1D;
 $footerTextColor: #999999;
+$heroSubtextColor: #4f4f4f;
 
+@mixin button-style{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: $orderButtonColor;
+    color: $pageBackground;
+    font-size: 1.25em;
+
+
+    &:hover{
+        cursor: pointer;
+        background-color: rgba($orderButtonColor,.8);
+    }
+}
 
 *{
     box-sizing: border-box;
@@ -95,10 +111,24 @@ body{
     &__center-elements{
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         align-self: center;
         flex-grow: 2;
+
+        .hero{
+            width: 30%;
+            padding: 5px;
+
+            &__text{
+                font-size: 2.5em;
+            }
+
+            &__subtext{
+                font-size: .9em;
+                color: $heroSubtextColor;
+            }
+        }
     }
 
     &__mouse-icon{
@@ -113,6 +143,7 @@ body{
             cursor: pointer;
         }
     }
+
 }
 
 .about, .proposal{
@@ -122,7 +153,12 @@ body{
         width: 80%;
         display: grid;
         grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 20px;
 
+        &--align-top{
+            align-items: start;
+        }
+        
         &--max-width{
             width: 100%;
         }
@@ -134,22 +170,17 @@ body{
     &__description{
         width: 80%;
         margin-top: 100px;
+
+        &__final-statement{
+            text-align: center;
+            font-weight: 700;
+        }
     }
 
     &__order-button{
-        width: 200px;
-        height: 50px;
-        border: none;
-        border-radius: 25px;
-        background-color: $orderButtonColor;
-        color: $pageBackground;
-        font-size: 1.25em;
-        margin-top: 100px;
+        @include button-style;
+        margin-top: 50px;
 
-        &:hover{
-            cursor: pointer;
-            background-color: rgba($orderButtonColor,.8);
-        }
     }
 }
 
@@ -205,8 +236,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    margin: 30px;
+    padding: 10px;
 
     &__image{
         width: 64px;
@@ -225,6 +255,57 @@ body{
     }
 }
 
+.book-order{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+
+    .form{
+        width: 80%;
+        height: 50%;
+        background-color: $pageBackground;
+        border: 1px solid #e2e2e2;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+
+        &__close-button{
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        &__input{
+            width: 200px;
+            height: 28px;
+            padding: 5px;
+            border: 1px solid #b3b3b3;
+            border-radius: 14px;
+        }
+
+        &__button{
+            @include button-style;
+            height: 35px;
+        }
+    }
+    
+}
+
 .cupcakes-image{
     width: 700px;
 }
@@ -232,8 +313,16 @@ body{
 .fixed{
     position: fixed;
     background-color: $pageBackground;
-    border-bottom: 1px solid rgb(226, 226, 226);
+    border-bottom: 1px solid #e2e2e2;
     z-index: 2;
+}
+
+.visible{
+    display: flex;
+}
+
+.lockScroll{
+    overflow-y: hidden;
 }
 
 @keyframes mouse-animation{

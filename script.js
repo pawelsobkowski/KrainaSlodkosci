@@ -1,6 +1,9 @@
 const mouse = document.querySelector(".home__mouse-icon");
 const firstSection = document.querySelector(".about");
-const header = document.querySelector("header");
+const header = document.querySelector(".header");
+const orderBtn = document.querySelector(".catering__order-button");
+const closeBtn = document.querySelector(".form__close-button");
+const bookForm = document.querySelector(".book-order");
 
 const scrollToSection = () => {
     window.scrollTo({
@@ -10,12 +13,20 @@ const scrollToSection = () => {
       });
 }
 
-const LockHeader = () => {
+const lockHeader = () => {
     if(window.scrollY>header.offsetHeight){
         header.classList.add('fixed')
     }
     else header.classList.remove('fixed')
 }
 
-window.addEventListener('scroll', LockHeader);
+const showBookForm = () => {
+    bookForm.classList.toggle('visible');
+    bookForm.style.top=`${window.scrollY}px`;
+    document.body.classList.toggle('lockScroll');
+}
+
+window.addEventListener('scroll', lockHeader);
 mouse.addEventListener('click', scrollToSection);
+orderBtn.addEventListener('click', showBookForm);
+closeBtn.addEventListener('click', showBookForm);
