@@ -275,6 +275,7 @@ body {
   border-radius: 32px;
   padding: 10px;
   background-color: #5CBEDC;
+  fill: #fff;
 }
 
 .card__product-image {

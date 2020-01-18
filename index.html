@@ -1,144 +1,272 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kraina słodkości</title>
-    <link rel="Stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-</head>
-<body>
-    <section id="Home" class="home section">
-        <header class="header">
-            <div class="logo-position">
-                <img src="images/logo.svg" alt="logo" class="header__logo">
-                <img src="images/brand-name.png" alt="brand name" class="header__brand-name">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Kraina słodkości</title>
+        <link rel="Stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <section id="Home" class="home section">
+            <header class="header">
+                <div class="logo-position">
+                    <img
+                        src="images/logo.svg"
+                        alt="logo"
+                        class="header__logo"
+                    />
+                    <img
+                        src="images/brand-name.png"
+                        alt="brand name"
+                        class="header__brand-name"
+                    />
+                </div>
+                <nav class="nav">
+                    <a href="#Home" class="nav__element">Home</a>
+                    <a href="#About" class="nav__element">O nas</a>
+                    <a href="#Proposal" class="nav__element">Oferta</a>
+                    <a href="#Catering" class="nav__element">Catering</a>
+                </nav>
+            </header>
+            <div class="home__center-elements">
+                <div class="hero">
+                    <h1 class="hero__text">Nasza misja!</h1>
+                    <p class="hero__subtext">
+                        To dostarczanie klientom wysokiej jakości produktów
+                        cukierniczych na każdy dzień oraz na różne okazje,
+                        sporządzone według naszych sprawdzonych receptur!
+                    </p>
+                </div>
+
+                <img
+                    src="images/cupcakes.svg"
+                    alt="cupcakes"
+                    class="cupcakes-image"
+                />
             </div>
-            <nav class="nav">
-                <a href="#Home" class="nav__element">Home</a>
-                <a href="#About" class="nav__element">O nas</a>
-                <a href="#Proposal" class="nav__element">Oferta</a>
-                <a href="#Catering" class="nav__element">Catering</a>
-                
-            </nav>
-        </header>
-        <div class="home__center-elements">
-            <div class="hero">
-                <h1 class="hero__text">Nasza misja!</h1>
-                <p class="hero__subtext">To dostarczanie klientom  wysokiej jakości produktów cukierniczych na każdy dzień oraz na różne okazje, sporządzone według naszych sprawdzonych receptur!</p>
+            <img
+                src="images/clicker.svg"
+                alt="mouse"
+                class="home__mouse-icon"
+            />
+        </section>
+        <section id="About" class="about section">
+            <h2 class="section__title">O nas</h2>
+            <div
+                class="about__cards about__cards--max-width about__cards--align-top"
+            >
+                <div class="card">
+                    <img src="images/tick.svg" alt="img" class="card__image" />
+
+                    <p class="card__description">
+                        Kraina Słodkości łączy tradycyjną cukiernię z branżą
+                        cateringową. Jesteśmy dla Ciebie na co dzień, jak i na
+                        Twoje życzenie od święta.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="images/tick.svg" alt="img" class="card__image" />
+
+                    <p class="card__description">
+                        Każdy kto trafi na ścieżkę do naszej cukierni, nie
+                        zawiedzie się. Mamy bogatą ofertę produktów
+                        cukierniczych w punkcie stacjonarny. Co jeśli nasze
+                        smakołyki zasmakują? Zaproś nas na ważne dla Ciebie
+                        uroczystości.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="images/tick.svg" alt="img" class="card__image" />
+
+                    <p class="card__description">
+                        Nasze wypieki i smakołyki są tworzone przez
+                        profesjonalistów, dla których cukiernictwo to pasja.
+                        Nasi cukiernicy cały czas się szkolą i pragną być jak
+                        najlepsi dla Ciebie! Eksperymentują i szukają nowych
+                        smakowych doznań by się nimi z Tobą podzielić.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="images/tick.svg" alt="img" class="card__image" />
+
+                    <p class="card__description">
+                        Zapraszamy do skosztowania Naszych słodkości w naszym
+                        lokalu, w którym poczujesz się jak w domu i będziesz
+                        mógł pozwolić sobie na chwilę odpoczynku w naszych
+                        wygodnych fotelach.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="images/tick.svg" alt="img" class="card__image" />
+
+                    <p class="card__description">
+                        Zamów oferowany przez Naszą firmę Słodki Stół i cieszcie
+                        się słodkością wraz z rodziną, przyjaciółmi na ważnych
+                        dla Was uroczystościach!
+                    </p>
+                </div>
             </div>
-            
-            <img src="images/cupcakes.svg" alt="cupcakes" class="cupcakes-image">
-        </div>
-        <img src="images/clicker.svg" alt="mouse" class="home__mouse-icon">
-        
-    </section>
-    <section id="About" class="about section">
-        <h2 class="section__title">O nas</h2>
-        <div class="about__cards about__cards--max-width about__cards--align-top">
-            <div class="card">
-                <img src="images/favorite_border-24px.svg" alt="img" class="card__image">
-                
-                <p class="card__description">Kraina Słodkości łączy tradycyjną cukiernię z branżą cateringową. Jesteśmy dla Ciebie na co dzień, jak i na Twoje życzenie od święta.</p>
+        </section>
+        <section id="Proposal" class="proposal section">
+            <h2 class="section__title">Oferta</h2>
+            <div class="about__cards">
+                <div class="card">
+                    <img
+                        src="images/birthday-cake.svg"
+                        alt="img"
+                        class="card__product-image"
+                    />
+                    <p class="card__title card__title--bold">Torty</p>
+                </div>
+                <div class="card">
+                    <img
+                        src="images/cake.svg"
+                        alt="img"
+                        class="card__product-image"
+                    />
+                    <p class="card__title card__title--bold">Ciasta</p>
+                </div>
+                <div class="card">
+                    <img
+                        src="images/cookie.svg"
+                        alt="img"
+                        class="card__product-image"
+                    />
+                    <p class="card__title card__title--bold">Ciasteczka</p>
+                </div>
+                <div class="card">
+                    <img
+                        src="images/donut.svg"
+                        alt="img"
+                        class="card__product-image"
+                    />
+                    <p class="card__title card__title--bold">Pączki</p>
+                </div>
+                <div class="card">
+                    <img
+                        src="images/muffin.svg"
+                        alt="img"
+                        class="card__product-image"
+                    />
+                    <p class="card__title card__title--bold">Babeczki</p>
+                </div>
+                <div class="card">
+                    <img
+                        src="images/tarte.svg"
+                        alt="img"
+                        class="card__product-image"
+                    />
+                    <p class="card__title card__title--bold">Tarty</p>
+                </div>
             </div>
-            <div class="card">
-                <img src="images/favorite_border-24px.svg" alt="img" class="card__image">
-                
-                <p class="card__description">Każdy kto trafi na ścieżkę do naszej cukierni, nie zawiedzie się. Mamy bogatą ofertę produktów cukierniczych w punkcie stacjonarny. Co jeśli nasze smakołyki zasmakują? Zaproś nas na ważne dla Ciebie uroczystości.</p>
+        </section>
+        <section id="Catering" class="catering section">
+            <h2 class="section__title">Catering</h2>
+            <article class="catering__description">
+                <p>
+                    W dzień stacjonarnie cukiernia, w nocy zaś catering.
+                    Zapraszamy do zapoznania się z Naszą ofertą dotyczącą
+                    Słodkich Stołów i tortów.
+                </p>
+                <p>
+                    Jeśli smakują Wam słodkości z naszej stacjonarnej cukierni,
+                    zamów Słodki Stół lub Tort na urodziny, imieniny, ślub,
+                    chrzest i inne ważne dla Ciebie okazje. Napisz do nas jaki
+                    termin Cię interesuję, a my prześlemy nasz katalog słodkości
+                    i wspólnie pomożemy wybrać słodkości i dekoracje na
+                    uroczystość.
+                </p>
+                <p class="catering__description__final-statement">
+                    KLIKNIJ ZAMÓW I SKONTAKTUJ SIĘ Z PRACOWNIKIEM KRAINY
+                    SŁODKOŚCI!
+                </p>
+            </article>
+            <button class="catering__order-button">Wybierz termin</button>
+            <div class="book-order">
+                <form class="form">
+                    <img
+                        src="images/close.svg"
+                        alt="close button"
+                        class="form__close-button"
+                    />
+                    <h2>Zaplanuj spotkanie</h2>
+                    <label for="name">Imię i nazwisko</label
+                    ><input
+                        type="text"
+                        class="form__input"
+                        id="name"
+                        name="name"
+                        required
+                    />
+                    <label for="date">Wybierz termin</label
+                    ><input
+                        type="date"
+                        class="form__input"
+                        id="date"
+                        name="date"
+                        min="2020-01-01"
+                        max="2022-12-31"
+                        required
+                    />
+                    <label for="time">Wybierz godzinę</label
+                    ><input
+                        type="time"
+                        class="form__input"
+                        id="time"
+                        name="time"
+                        min="8:00"
+                        max="18:00"
+                        required
+                    />
+                    <button class="form__button">Potwierdź</button>
+                </form>
             </div>
-            <div class="card">
-                <img src="images/favorite_border-24px.svg" alt="img" class="card__image">
-                
-                <p class="card__description">Nasze wypieki i smakołyki są tworzone przez profesjonalistów, dla których cukiernictwo to pasja.  Nasi cukiernicy cały czas się szkolą i pragną być jak najlepsi dla Ciebie! Eksperymentują i szukają nowych smakowych doznań by się nimi z Tobą podzielić.</p>
+        </section>
+        <footer class="footer">
+            <div class="footer__contact footer__part">
+                <p class="footer__part__title">Kontakt</p>
+                <p>Adres: ul. Pączkowa 2/3 Bydgoszcz</p>
+                <p>Telefon: 555-333-444</p>
+                <p>Email:</p>
+                <p>catering@krainaslodkosci.pl</p>
+                <p>cukiernia@krainaslodkosci.pl</p>
             </div>
-            <div class="card">
-                <img src="images/favorite_border-24px.svg" alt="img" class="card__image">
-                
-                <p class="card__description">Zapraszamy do skosztowania Naszych słodkości w naszym lokalu, w którym poczujesz się jak w domu i będziesz mógł pozwolić sobie na chwilę odpoczynku w naszych wygodnych fotelach.</p>
+            <div class="footer__socials footer__part">
+                <p class="footer__part__title">Znajdź nas</p>
+                <img
+                    src="images/facebook.svg"
+                    alt="facebook"
+                    class="footer__socials__item"
+                />
+                <img
+                    src="images/instagram.svg"
+                    alt="instagram"
+                    class="footer__socials__item"
+                />
+                <img
+                    src="images/twitter.svg"
+                    alt="twitter"
+                    class="footer__socials__item"
+                />
             </div>
-            <div class="card">
-                <img src="images/favorite_border-24px.svg" alt="img" class="card__image">
-                
-                <p class="card__description">Zamów oferowany przez Naszą firmę Słodki Stół i cieszcie się słodkością wraz z rodziną, przyjaciółmi na ważnych dla Was uroczystościach!</p>
+            <div class="footer__credits">
+                Icons made by
+                <a
+                    href="https://www.flaticon.com/authors/freepik"
+                    title="Freepik"
+                    >Freepik</a
+                >
+                from
+                <a href="https://www.flaticon.com/" title="Flaticon">
+                    www.flaticon.com</a
+                >
             </div>
-            
-        </div>
-    </section>
-    <section id="Proposal" class="proposal section">
-        <h2 class="section__title">Oferta</h2>
-        <div class="about__cards">
-            <div class="card">
-                <img src="images/birthday-cake.svg" alt="img" class="card__product-image">
-                <p class="card__title card__title--bold">Torty</p>
-                
-            </div>
-            <div class="card">
-                <img src="images/cake.svg" alt="img" class="card__product-image">
-                <p class="card__title card__title--bold">Ciasta</p>
-                
-            </div>
-            <div class="card">
-                <img src="images/cookie.svg" alt="img" class="card__product-image">
-                <p class="card__title card__title--bold">Ciasteczka</p>
-                
-            </div>
-            <div class="card">
-                <img src="images/donut.svg" alt="img" class="card__product-image">
-                <p class="card__title card__title--bold">Pączki</p>
-                
-            </div>
-            <div class="card">
-                <img src="images/muffin.svg" alt="img" class="card__product-image">
-                <p class="card__title card__title--bold">Babeczki</p>
-                
-            </div>
-            <div class="card">
-                <img src="images/tarte.svg" alt="img" class="card__product-image">
-                <p class="card__title card__title--bold">Tarty</p>
-                
-            </div>
-        </div>
-    </section>
-    <section id="Catering" class="catering section">
-        <h2 class="section__title">Catering</h2>
-        <article class="catering__description">
-            <p>W dzień stacjonarnie cukiernia, w nocy zaś catering. Zapraszamy do zapoznania się z Naszą ofertą dotyczącą Słodkich Stołów i tortów.</p>
-            <p>Jeśli smakują Wam słodkości z naszej stacjonarnej cukierni, zamów Słodki Stół lub Tort na urodziny, imieniny, ślub, chrzest i inne ważne dla Ciebie okazje. Napisz do nas jaki termin Cię interesuję, a my prześlemy nasz katalog słodkości i wspólnie pomożemy wybrać słodkości i dekoracje na uroczystość.</p>
-            <p class="catering__description__final-statement">KLIKNIJ ZAMÓW I SKONTAKTUJ SIĘ Z PRACOWNIKIEM KRAINY SŁODKOŚCI!</p></article>
-        <button class="catering__order-button">Wybierz termin</button>
-        <div class="book-order">
-            <form class="form">
-                <img src="images/close.svg" alt="close button" class="form__close-button">
-                <h2>Zaplanuj spotkanie</h2>
-                <label for="name">Imię i nazwisko</label><input type="text" class="form__input" id="name" name="name" required>
-                <label for="date">Wybierz termin</label><input type="date" class="form__input" id="date" name="date" min="2020-01-01" max="2022-12-31" required>
-                <label for="time">Wybierz godzinę</label><input type="time" class="form__input" id="time" name="time" min="8:00" max="18:00" required>
-                <button class="form__button">Potwierdź</button>
-            </form>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer__contact footer__part">
-            <p class="footer__part__title">Kontakt</p>
-            <p>Adres: ul. Pączkowa 2/3 Bydgoszcz</p>
-            <p>Telefon: 555-333-444</p>
-            <p>Email: </p>
-            <p>catering@krainaslodkosci.pl</p>
-            <p>cukiernia@krainaslodkosci.pl</p>
-        </div>
-        <div class="footer__socials footer__part">
-            <p class="footer__part__title">Znajdź nas</p>
-            <img src="images/facebook.svg" alt="facebook" class="footer__socials__item">
-            <img src="images/instagram.svg" alt="instagram" class="footer__socials__item">
-            <img src="images/twitter.svg" alt="twitter" class="footer__socials__item">
-            
-        </div>
-        <div class="footer__credits">
-            Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-        </div>
-        
-    </footer>
-    <script src="script.js"></script>
-</body>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
