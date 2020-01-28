@@ -1,7 +1,7 @@
-@import "./node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+@import './node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
 $pageBackground: #fdfcfc;
 $brandNameColor: #006573;
-$navButtonColor: #0d5bf2;
+$activeTabColor: #b5153e;
 $cardImageBg: #5cbedc;
 $orderButtonColor: #158eb5;
 $footerBg: #161a1d;
@@ -34,7 +34,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Comfortaa", cursive;
+    font-family: 'Comfortaa', cursive;
     background-color: $pageBackground;
 }
 
@@ -71,8 +71,9 @@ body {
 }
 
 .nav {
+    height: 100%;
     display: flex;
-    align-items: center;
+    align-content: stretch;
     @media (max-width: 768px) {
         display: none;
         width: 100%;
@@ -86,25 +87,22 @@ body {
     }
 
     &__element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #000;
         text-decoration: none;
-        margin: 0 10px;
+        padding: 10px;
+        flex-grow: 2;
 
-        &--button {
-            width: 120px;
-            height: 40px;
-            font-family: "Comfortaa", cursive;
-            font-size: 1em;
-            font-weight: bold;
-            color: #fff;
-            background-color: $navButtonColor;
-            border: none;
-            border-radius: 20px;
+        &:hover {
+            cursor: pointer;
+        }
 
-            &:hover {
-                cursor: pointer;
-                background-color: rgba($navButtonColor, 0.8);
-            }
+        &--active {
+            font-size: 1.25em;
+            font-weight: 700;
+            color: $activeTabColor;
         }
     }
 }
@@ -122,7 +120,7 @@ body {
 }
 
 .home {
-    background-image: url("images/bg.svg");
+    background-image: url('images/bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100% 0;
@@ -168,9 +166,9 @@ body {
     &__mouse-icon {
         width: 32px;
         position: absolute;
-        left: 50%;
+        //left: 50%;
         top: 92%;
-        transform: translate(-50%, -50%);
+        //transform: translate(-50%, -50%);
         animation: mouse-animation 2s infinite;
 
         &:hover {
@@ -357,7 +355,7 @@ body {
     display: flex;
 }
 
-.lockScroll {
+.lock-scroll {
     overflow-y: hidden;
 }
 

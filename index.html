@@ -27,10 +27,21 @@
                     />
                 </div>
                 <nav class="nav">
-                    <a href="#Home" class="nav__element">Home</a>
-                    <a href="#About" class="nav__element">O nas</a>
-                    <a href="#Proposal" class="nav__element">Oferta</a>
-                    <a href="#Catering" class="nav__element">Catering</a>
+                    <a
+                        class="nav__element nav__element--active"
+                        data-name="home"
+                    >
+                        Home
+                    </a>
+                    <a class="nav__element" data-name="about">
+                        O nas
+                    </a>
+                    <a class="nav__element" data-name="proposal">
+                        Oferta
+                    </a>
+                    <a class="nav__element" data-name="catering">
+                        Catering
+                    </a>
                 </nav>
                 <button class="hamburger hamburger--arrow" type="button">
                     <span class="hamburger-box">
@@ -200,16 +211,16 @@
                         class="form__close-button"
                     />
                     <h2>Zaplanuj spotkanie</h2>
-                    <label for="name">Imię i nazwisko</label
-                    ><input
+                    <label for="name">Imię i nazwisko</label>
+                    <input
                         type="text"
                         class="form__input"
                         id="name"
                         name="name"
                         required
                     />
-                    <label for="date">Wybierz termin</label
-                    ><input
+                    <label for="date">Wybierz termin</label>
+                    <input
                         type="date"
                         class="form__input"
                         id="date"
@@ -218,8 +229,8 @@
                         max="2022-12-31"
                         required
                     />
-                    <label for="time">Wybierz godzinę</label
-                    ><input
+                    <label for="time">Wybierz godzinę</label>
+                    <input
                         type="time"
                         class="form__input"
                         id="time"
@@ -264,12 +275,13 @@
                 <a
                     href="https://www.flaticon.com/authors/freepik"
                     title="Freepik"
-                    >Freepik</a
                 >
+                    Freepik
+                </a>
                 from
                 <a href="https://www.flaticon.com/" title="Flaticon">
-                    www.flaticon.com</a
-                >
+                    www.flaticon.com
+                </a>
             </div>
         </footer>
         <script src="script.js"></script>
